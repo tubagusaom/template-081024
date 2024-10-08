@@ -1,0 +1,979 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>UltraMobile - Pages & PageApp Documentation</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="Enabled">
+	<meta name="copyright" content="Enabled">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2018-03-30T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body class="documenter-project-ultramobile">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#welcome" title="Welcome">Welcome</a></li>
+			<li><a href="#media_galleries" title="Media - Galleries">Media - Galleries</a>
+				<ul>
+					<li><a href="#media_galleries_thumbnail_square,_thumbnail_round_and_wide_gallery">Thumbnail Square, Thumbnail Round and Wide Gallery</a>
+					<li><a href="#media_galleries_filterable_gallery">Filterable Gallery</a>
+				</ul>
+			</li>
+			<li><a href="#media_portfolios" title="Media - Portfolios">Media - Portfolios</a></li>
+			<li><a href="#homepage" title="Homepage">Homepage</a>
+				<ul>
+					<li><a href="#homepage_homepage_slider">Homepage Slider</a>
+					<li><a href="#homepage_call_to_action">Call to Action.</a>
+					<li><a href="#homepage_content_strip">Content Strip</a>
+					<li><a href="#homepage_icon_columns">Icon Columns</a>
+					<li><a href="#homepage_quote_and_feature_slider">Quote and Feature Slider</a>
+				</ul>
+			</li>
+			<li><a href="#04_page" title="404 Page">404 Page</a></li>
+			<li><a href="#articles" title="Articles">Articles</a>
+				<ul>
+					<li><a href="#articles_instant_article_structure">Instant Article Structure.</a>
+				</ul>
+			</li>
+			<li><a href="#embeds" title="Embeds">Embeds</a></li>
+			<li><a href="#page_faq" title="Page FAQ">Page FAQ</a></li>
+			<li><a href="#maintenance_page" title="Maintenance Page">Maintenance Page</a></li>
+			<li><a href="#profile_page" title="Profile Page">Profile Page</a></li>
+			<li><a href="#coming_soon_page" title="Coming Soon page">Coming Soon page</a></li>
+			<li><a href="#page_system" title="Page System">Page System</a></li>
+			<li><a href="#task_progress" title="Task Progress">Task Progress</a></li>
+			<li><a href="#timelines" title="Timelines">Timelines</a></li>
+			<li><a href="#page_vcard" title="Page VCard">Page VCard</a></li>
+			<li><a href="#covers_important" title="Covers - Important">Covers - Important</a>
+				<ul>
+					<li><a href="#covers_important_cover_item_structure">Cover Item Structure</a>
+				</ul>
+			</li>
+			<li><a href="#coverpage_slider" title="Coverpage Slider">Coverpage Slider</a>
+				<ul>
+					<li><a href="#coverpage_slider_coverpage_faq_39s_nbsp">Coverpage FAQ&#39;s&nbsp;</a>
+				</ul>
+			</li>
+			<li><a href="#walkthroughs" title="Walkthroughs">Walkthroughs</a>
+				<ul>
+					<li><a href="#walkthroughs_walkthrough_with_main_button_at_the_bottom">Walkthrough with main button at the bottom.</a>
+				</ul>
+			</li>
+			<li><a href="#walkthrough_and_coverpages" title="Walkthrough and Coverpages">Walkthrough and Coverpages</a></li>
+			<li><a href="#final_words" title="Final Words">Final Words</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright Enabled 2018<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>UltraMobile</h1>
+	<h2>Pages & PageApp Documentation</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	
+	<li>latest update: 03/30/2018</li>
+	<li>by: Enabled</li>
+	<li><a href=""></a></li>
+	
+	</ul>
+	<p></p>
+	</section>
+	
+	<section id="welcome">
+	<div class="page-header"><h3>Welcome</h3><hr class="notop"></div>
+<p>
+	In this part of the documentation we&#39;ll be taking each page and explaining how to use it. However, if some pages are omitted and you require help, please contact us on www.enableds.com ( support page ) and we&#39;ll gladly assist you.</p>
+<p style="margin: 18px 0px; padding: 0px; border: 0px; outline: 0px; font-family: Arial, verdana, arial, sans-serif; vertical-align: baseline; line-height: 1.5em; color: rgb(56, 56, 56);">
+	Certain pages like Store, News and Blog are not explained here, because they contain elements that are just copy pastable, blocks, that you can duplicate and create more blocks that you just have to replace with your own content. These pages have been built in case you wish to connect the item to a CMS like WordPress or Joomla or anyother you may want that is compatbile with HTML, CSS and JS.&nbsp;</p>
+<div>
+	&nbsp;</div>
+<div class="alert alert-info">
+	Note! Pages get added inside the page-content class.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<div>
+	<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;page-transitions&quot; class=&quot;highlight-red&quot;&gt;
+    &lt;div class=&quot;page-content&quot;&gt;<span style="white-space:pre"> </span>
+         
+            &lt;!-- Pages get added here--&gt;
+      
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+</div>
+<p>
+	This is the strucutre explained in the structure documentation. All your pages get added inside this</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Please note! Certain pageapps may require ONLY themselves on a page. Meaning, you can only use that page, and no other content after it.&nbsp;</strong></p>
+</section>
+<section id="media_galleries">
+	<div class="page-header"><h3>Media - Galleries</h3><hr class="notop"></div>
+<p>
+	Galleries are easy to build. They require however a precise class structure to work. Let&#39;s explain the absolute basic gallery structure. This is vital and must be followed</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;gallery&quot;&gt;
+    &lt;a class=&quot;show-gallery&quot; href=&quot;images_location/image.jpg&quot; title=&quot;Image Caption When Opened&quot;&gt;
+        &lt;img src=&quot;images/empty.png&quot; data-src=&quot;image_location/image.jpg&quot; class=&quot;preload-image&quot; alt=&quot;img&quot;&gt;
+    &lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	The above structure will make an image open in full screen. There are a few required steps to be followed.&nbsp;</p>
+<p>
+	Line 1 creates the gallery housing tag. This is mandatory as this will tag the gallery in JS</p>
+<p>
+	Line 2 creates the anchor of the image that gets tapped. This contains the mandatory<b>&nbsp;</b><strong>show-gallery</strong> class that will allow the image to be opened, the href that contains the image that will be shown and the tile of the gallery that will appear on top of the opened image</p>
+<p>
+	Line 3 is the actual image itself. This is preloaded as explained in the features/images chapter.</p>
+<p>
+	Line 4 closes this image.&nbsp;</p>
+<p>
+	If you wish to create more gallery elements simply duplicate lines 2 3 4 and replace the images with your own</p>
+<p>
+	Line 5 closes the entire gallery.</p>
+<p>
+	This is the main structure that will be used in all our galleries. Everything else will be just CSS styleing and secondary classes. We&#39;ll explain as needed.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4 id="media_galleries_thumbnail_square,_thumbnail_round_and_wide_gallery">Thumbnail Square, Thumbnail Round and Wide Gallery</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;gallery gallery-thumbs gallery-square&quot;&gt;
+    &lt;a class=&quot;show-gallery&quot; href=&quot;images/pictures/1t.jpg&quot; title=&quot;Vynil and Typerwritter&quot;&gt;
+        &lt;img src=&quot;images/empty.png&quot; data-src=&quot;images/pictures/1s.jpg&quot; class=&quot;preload-image responsive-image&quot; alt=&quot;img&quot;&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;show-gallery&quot; href=&quot;images/pictures/2t.jpg&quot; title=&quot;Fruit Cookie Pie&quot;&gt;
+        &lt;img src=&quot;images/empty.png&quot; data-src=&quot;images/pictures/2s.jpg&quot; class=&quot;preload-image responsive-image&quot; alt=&quot;img&quot;&gt;
+    &lt;/a&gt;<span style="white-space:pre"> </span>
+    &lt;a class=&quot;show-gallery&quot; href=&quot;images/pictures/3t.jpg&quot; title=&quot;Plain Cookies and Flour&quot;&gt;
+        &lt;img src=&quot;images/empty.png&quot; data-src=&quot;images/pictures/3s.jpg&quot; class=&quot;preload-image responsive-image&quot; alt=&quot;img&quot;&gt;
+    &lt;/a&gt;<span style="white-space:pre"> </span>
+&lt;/div&gt;</pre>
+<p>
+	The above structure looks identical to the first one with the exception that the main class has the secondary classes&nbsp;<strong>gallery-thumbs gallery-square&nbsp;</strong>, which means it will create a gallery that is squared and that has thumbnails.</p>
+<p>
+	The available secondary classes for this strucuture are:</p>
+<p>
+	<strong>gallery-thumbs gallery-square&nbsp;</strong>- a simple square gallery</p>
+<p>
+	<strong>gallery-thumbs gallery-round&nbsp;</strong>- a simple round gallery&nbsp;</p>
+<p>
+	<strong>gallery-wide&nbsp;</strong>- a simple widescreen gallery.</p>
+<p>
+	The differences between them will be that the wide-gallery will have a strong class and a span class inside the anchor as well, as can be seen on media-gallery-wide that will allow you to set an overlay.</p>
+<p>
+	&nbsp;</p>
+<h4 id="media_galleries_filterable_gallery">Filterable Gallery</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;content&quot;&gt;
+    &lt;ul class=&quot;gallery-filter-controls&quot;&gt;
+        &lt;li class=&quot;gallery-filter-active gallery-filter-all&quot; data-filter=&quot;all&quot;&gt;All&lt;/li&gt;
+        &lt;li data-filter=&quot;2&quot;&gt;Tech&lt;/li&gt;
+        &lt;li data-filter=&quot;1&quot;&gt;Food&lt;/li&gt;
+        &lt;li data-filter=&quot;3&quot;&gt;Nature&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;div class=&quot;gallery gallery-filter gallery-filter-three&quot;&gt;
+        &lt;a href=&quot;images/pictures/2t.jpg&quot; class=&quot;show-gallery filtr-item&quot; tytle=&quot;Cream Pie&quot; data-category=&quot;1&quot;&gt;
+            &lt;img src=&quot;images/pictures/2s.jpg&quot; alt=&quot;sample image&quot;&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;images/pictures/1t.jpg&quot; class=&quot;show-gallery filtr-item&quot; title=&quot;Typeweritter and Vynil&quot; data-category=&quot;2&quot;&gt;
+            &lt;img src=&quot;images/pictures/1s.jpg&quot; alt=&quot;sample image&quot;&gt;
+        &lt;/a&gt;
+        &lt;a href=&quot;images/pictures/8t.jpg&quot; class=&quot;show-gallery filtr-item&quot; title=&quot;Macbook Tech Desk&quot; data-category=&quot;3&quot;&gt;
+            &lt;img src=&quot;images/pictures/isolated/8.jpg&quot; alt=&quot;sample image&quot;&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;decoration&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	You can only use 1 filterable gallery per page</p>
+<p>
+	Line 1 contains the content class that will house the gallery</p>
+<p>
+	Line 2 - 7are the filterable controls</p>
+<p>
+	Line 3 is the all items class. This has the gallery-filter-active and gallery-filter-all.&nbsp;</p>
+<p>
+	Note that all elements inside the filter controls have a&nbsp;<strong>data-filter</strong> attribute with a unique number. This will be used to target the gallery images.&nbsp;</p>
+<p>
+	Line 8 creates the gallery. You can change&nbsp;<strong>gallery-filter-three&nbsp;</strong>with&nbsp;<strong>gallery-filter-two</strong>.</p>
+<p>
+	Line 9 - 11 is an image. Note this has the attribute&nbsp;<strong>data-category=&quot;1&quot;</strong> this is mandatory so the gallery can target this image.&nbsp;</p>
+<p>
+	Line 12 - 14 is another image with data-category=&quot;2&quot; that will be targeted by data-filter=&quot;2&quot;</p>
+<p>
+	Line 15-17 is the last image with the data-category=&quot;3&quot; that will be targeted by data-filter=&quot;3&quot;</p>
+<div>
+	&nbsp;</div>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="media_portfolios">
+	<div class="page-header"><h3>Media - Portfolios</h3><hr class="notop"></div>
+<p>
+	Portfolio pages are built out of blocks. Meaning, copy pastable elemenets. Any portfolio item can be copy and pasted to create a new element and then your content added to it.&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="homepage">
+	<div class="page-header"><h3>Homepage</h3><hr class="notop"></div>
+<h4 id="homepage_homepage_slider">Homepage Slider</h4>
+<p>
+	To create more sliders and edit more slides in your homepage slider, simply follow the same rules as for the slider documentation. Duplicate the following element inside the single-slider class and add your content</p>
+<pre class="prettyprint lang-html linenums" style="background-image: url(&quot;../../_img/pre_bg.png&quot;);">
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;single-slider owl-carousel owl-no-dots bg-white&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;img width=&quot;700&quot; class=&quot;owl-lazy&quot; src=&quot;images/empty.png&quot; data-src=&quot;images/pictures/10lq.jpg&quot; data-src-retina=&quot;images/pictures/10.jpg&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h1 class=&quot;above-overlay cover-content-bottom center-text uppercase bolder color-white bottom-30&quot;&gt;Ultra &lt;span class=&quot;color-highlight&quot;&gt;Fast&lt;/span&gt;&lt;/h1&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;overlay overlay-gradient&quot;&gt;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;img width=&quot;700&quot; class=&quot;owl-lazy&quot; src=&quot;images/empty.png&quot; data-src=&quot;images/pictures/7lq.jpg&quot; data-src-retina=&quot;images/pictures/7.jpg&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h1 class=&quot;above-overlay cover-content-bottom center-text uppercase bolder color-white bottom-30&quot;&gt;Ultra &lt;span class=&quot;color-highlight&quot;&gt;Elegant&lt;/span&gt;&lt;/h1&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;overlay overlay-gradient&quot;&gt;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;img width=&quot;700&quot; class=&quot;owl-lazy&quot; src=&quot;images/empty.png&quot; data-src=&quot;images/pictures/8lq.jpg&quot; data-src-retina=&quot;images/pictures/8.jpg&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;h1 class=&quot;above-overlay cover-content-bottom center-text uppercase bolder color-white bottom-30&quot;&gt;Ultra &lt;span class=&quot;color-highlight&quot;&gt;Simple&lt;/span&gt;&lt;/h1&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;overlay overlay-gradient&quot;&gt;&lt;/div&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;</pre>
+<div>
+	As you see, the cover-content is not limited to fullscreen sliders. You can use this for simple sliders as well with a limited height and the results will be absolutely gorgeous. use the secondary classes to change your text color and size.&nbsp;</div>
+<h4 id="homepage_call_to_action">Call to Action.</h4>
+<p>
+	We&#39;ve used 3 call to action buttons for UltraMobile. The call to actions must be placed under the image slider.</p>
+<pre class="prettyprint lang-html linenums" style="background-image: url(&quot;../../_img/pre_bg.png&quot;);">
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;call-to-action&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;a href=&quot;tel:+1 234 567 890&quot;&gt;&lt;i class=&quot;fa fa-phone&quot;&gt;&lt;/i&gt;&lt;em&gt;Call&lt;/em&gt;&lt;/a&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;a href=&quot;sms:+1 234 567 890&quot;&gt;&lt;i class=&quot;fa fa-comment&quot;&gt;&lt;/i&gt;&lt;em&gt;Message&lt;/em&gt;&lt;/a&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;a href=&quot;mailto:&#121;&#111;&#117;&#114;&#110;&#97;&#109;&#101;&#64;&#100;&#111;&#109;&#97;&#105;&#110;&#46;&#99;&#111;&#109;&quot;&gt;&lt;i class=&quot;fa fa-envelope&quot;&gt;&lt;/i&gt;&lt;em&gt;Mail&lt;/em&gt;&lt;/a&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;/div&gt;
+</pre>
+<div>
+	&nbsp;</div>
+<h4 id="homepage_content_strip">Content Strip</h4>
+<pre class="prettyprint lang-html linenums" style="background-image: url(&quot;../../_img/pre_bg.png&quot;);">
+&lt;div class=&quot;content-strip&quot;&gt;
+    &lt;div class=&quot;container&quot;&gt;
+        &lt;h2 class=&quot;bold uppercase color-white center-text&quot;&gt;25,000 Happy Customers&lt;/h2&gt;
+        &lt;p class=&quot;small-text color-white opacity-50 center-text half-bottom&quot;&gt;Become a happy customer today!&lt;/p&gt;
+        &lt;p class=&quot;boxed-text no-bottom color-white opacity-80&quot;&gt;
+              Over 25,000 customers can vouch for our quality items, and fast support. We made it here because of you, and we&#39;ll always respect you.
+        &lt;/p&gt;
+        &lt;a href=&quot;#&quot; class=&quot;button button-ghost border-gray-light button-rounded button-center full-top button-s uppercase bold&quot;&gt;Purchase Today&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;overlay bg-black opacity-70&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;content-strip-bg preload-image&quot; data-src=&quot;images/pictures/1.jpg&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+<p>
+	Line 1 defines the box as a content strip</p>
+<p>
+	Line 2 houes the content</p>
+<p>
+	Line 3 4 5 6 7 8 are the content strip text. Color edit and resize using secondary classes</p>
+<p>
+	Line 9 closes the content strip text</p>
+<p>
+	Line 10 ads the background overlay</p>
+<p>
+	Line 11 is the background image&nbsp;</p>
+<h4 id="homepage_icon_columns">Icon Columns</h4>
+<pre class="prettyprint lang-html linenums" style="background-image: url(&quot;../../_img/pre_bg.png&quot;);">
+&lt;div class=&quot;icon-column&quot;&gt;
+    &lt;i class=&quot;fa fa-code color-blue-dark&quot;&gt;&lt;/i&gt;
+    &lt;h1 class=&quot;uppercase ultrabold&quot;&gt;ELite Code&lt;/h1&gt;
+    &lt;p&gt;
+        We&#39;ve been building mobile websites since the dawn of handhelds!
+        Our experience is made for you.
+    &lt;/p&gt;
+&lt;/div&gt;</pre>
+<div>
+	Simply duplicate the class above and replace the text inside with yours to create more icon columns. These fully support secondary classes for awesome customizations.</div>
+<div>
+	&nbsp;</div>
+<h4 id="homepage_quote_and_feature_slider">Quote and Feature Slider</h4>
+<p>
+	The quote and feature slider use simple elements added inside a slider container just like explained in the Features Documentation. They are fully copy paste ready. Duplicate the elements and replace you content and you&#39;re ready to go!&nbsp;</p>
+<div>
+	&nbsp;</div>
+</section>
+<section id="04_page">
+	<div class="page-header"><h3>404 Page</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;page-404&quot;&gt;
+    &lt;h1 class=&quot;center-text&quot;&gt;404&lt;/h1&gt;
+    &lt;h4 class=&quot;center-text uppercase ultrabold full-bottom&quot;&gt;Page Not Found&lt;/h4&gt;
+    &lt;p class=&quot;center-text&quot;&gt;
+        Our server is burning hot trying to find this page, but it couldn&#39;t ... how about going back home?
+    &lt;/p&gt;
+    &lt;a href=&quot;#&quot; class=&quot;button button-green button-s button-center button-rounded uppercase ultrabold&quot;&gt;Home&lt;/a&gt;
+&lt;/div&gt;</pre>
+<p>
+	The above will generate a 404 page. Simpy add the code to an empty page and replace the text inside with yours.&nbsp;</p>
+</section>
+<section id="articles">
+	<div class="page-header"><h3>Articles</h3><hr class="notop"></div>
+<p>
+	Instant articles are made to simulate the design of Facebook. Please note! Facebook uses a huge server, that preloads stuff instantly when you open the app. We&#39;re usign HTML, meaning all the content gets loaded when you are on the page. If you plan on using LOTS of articles, it is recommended you split them into max 5 per page and use pagination.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4 id="articles_instant_article_structure">Instant Article Structure.</h4>
+<pre class="prettyprint lang-html linenums">
+&lt;div data-article-card=&quot;article-1&quot; class=&quot;article-card bg-white&quot;&gt;
+    &lt;a data-deploy-card=&quot;article-1&quot; href=&quot;#&quot; class=&quot;article-header&quot;&gt;
+        &lt;span class=&quot;article-overlay&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;article-image preload-image&quot; data-src=&quot;images/pictures/8.jpg&quot;&gt;&lt;/span&gt;
+        &lt;span class=&quot;article-category color-white bg-border-light uppercase&quot;&gt;Computers&lt;/span&gt;
+        &lt;span class=&quot;article-author color-gray-light&quot;&gt;&lt;i class=&quot;fa fa-user opacity-50&quot;&gt;&lt;/i&gt;Enabled&lt;/span&gt;
+        &lt;span class=&quot;article-time color-gray-light&quot;&gt;15th September 2019&lt;i class=&quot;fa fa-clock-o opacity-50&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;div class=&quot;article-content&quot;&gt;
+        &lt;h1 class=&quot;article-title top-15&quot;&gt; Article Caption&lt;/h1&gt;
+        &lt;p class=&quot;half-bottom&quot;&gt;<span style="white-space:pre"> </span>Text under the photo. &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;article-content-hidden&quot;&gt;
+       &lt;!-- This content willbe shown when opening the instant article ---&gt; 
+       &lt;a href=&quot;#&quot; class=&quot;close-article&quot;&gt;Back to Articles&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;<span style="white-space:pre"> </span></pre>
+<p>
+	Lets explain</p>
+<p>
+	Line 1 creates the main article body. This has the article&nbsp;<strong>data-article-card=&quot;article-1&quot;</strong></p>
+<p>
+	Line 2 creates the article elemetns. This has the attribute&nbsp;<strong>data-deploy-card=&quot;article-1&quot;&nbsp;</strong></p>
+<p>
+	Note that line 1 and 2 must have the same value for the data attribute</p>
+<p>
+	Line 3 is the article overlay</p>
+<p>
+	Line 4 is the article image.&nbsp;</p>
+<p>
+	Line 5 is the article author.&nbsp;</p>
+<p>
+	Line 6 is the category.&nbsp;</p>
+<p>
+	Line 7 is the article time.&nbsp;</p>
+<p>
+	Lines 4, 5, 6, 7 will be automatically placed in the main article when opened as well</p>
+<p>
+	Line 8 closes the article header.</p>
+<p>
+	Line 9 10 11 12 is the article content this will be visible in the opened article as well as the clickable one</p>
+<p>
+	Line 13 - 14 - 15 - 16 will be the article content. Copy and paste elements from UltraMobile features inside here.</p>
+<p>
+	Line 17 closes the instant article.</p>
+<p>
+	To make more, duplicate everything from line 1 to 17 and replace lines 1 and 2 data attributes with unique names.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<div>
+	&nbsp;</div>
+<p>
+	&nbsp;</p>
+</section>
+<section id="embeds">
+	<div class="page-header"><h3>Embeds</h3><hr class="notop"></div>
+<p>
+	To embed iframes and mak them responsive in our product ( for small mobile screens ) simply use the following&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;responsive-video&quot;&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/7449107&quot; width=&quot;640&quot; height=&quot;480&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</pre>
+<p>
+	After doing so, just add content from the features around it to give it more style.</p>
+</section>
+<section id="page_faq">
+	<div class="page-header"><h3>Page FAQ</h3><hr class="notop"></div>
+<p>
+	Creatign a FAQ box is simple.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;faq bg-white&quot;&gt;
+    &lt;h6 class=&quot;faq-question pointer&quot;&gt;&lt;!-- Question --&gt; &lt;i class=&quot;fa fa-chevron-down&quot;&gt;&lt;/i&gt;&lt;/h6&gt;
+    &lt;div class=&quot;faq-answer&quot;&gt;
+        &lt;!-- Answer ---&gt;
+    &lt;/div&gt;<span style="white-space:pre"> </span>
+&lt;/div&gt;</pre>
+<p>
+	Simply copy and paste the code above as many times as you need and add your question and answer! It&#39;s that simple!&nbsp;</p>
+</section>
+<section id="maintenance_page">
+	<div class="page-header"><h3>Maintenance Page</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;page-maintenance&quot;&gt;
+    &lt;h1 class=&quot;center-text half-bottom&quot;&gt;&lt;i class=&quot;fa fa-cog fa-5x fa-spin&quot;&gt;&lt;/i&gt;&lt;/h1&gt;
+    &lt;h1 class=&quot;center-text uppercase ultrabold bottom-0&quot;&gt;Maintenance&lt;/h1&gt;
+    &lt;h6 class=&quot;center-text uppercase ultrabold bottom-30&quot;&gt;Huston, we have a problem&lt;/h6&gt;
+    &lt;p class=&quot;center-text&quot;&gt;
+       We&#39;re searching for our server guy, he has some explaining to do! We&#39;ll be back shortly.
+    &lt;/p&gt;
+&lt;/div&gt;</pre>
+<p>
+	Add your content in the above page and place it in a blank page. It&#39;s that simple!&nbsp;</p>
+</section>
+<section id="profile_page">
+	<div class="page-header"><h3>Profile Page</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;profile-1&quot;&gt;
+    &lt;div class=&quot;profile-header-clear&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;profile-body&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;profile-button button box-shadow button-s button-round bold button-green button-center&quot;&gt;Follow&lt;/a&gt;<span style="white-space:pre"> </span>
+        &lt;h1 class=&quot;profile-heading&quot;&gt;Karla Black&lt;/h1&gt;
+        &lt;h2 class=&quot;profile-sub-heading&quot;&gt;Model for PixaBay&lt;/h2&gt;
+     
+        &lt;!--Your profile content--&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	Line 1 generates the profile page</p>
+<p>
+	Line 2 creates the distance so the image is shown .The height can be edited from frameworks.css by locating profile-header-clear.</p>
+<p>
+	Line 3 creates the profile body.</p>
+<p>
+	You can add any content you want in the profile body</p>
+<p>
+	Line 10 closes the profile body</p>
+<p>
+	Line 11 closes the profile.</p>
+<p>
+	&nbsp;</p>
+<p>
+	The same applies for Profile 2 as well!&nbsp;</p>
+</section>
+<section id="coming_soon_page">
+	<div class="page-header"><h3>Coming Soon page</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;page-countdown&quot;&gt;<span style="white-space:pre"> </span>
+    &lt;h1 class=&quot;center-text&quot;&gt;&lt;i class=&quot;fa fa-cog fa-spin fa-2x opacity-20 bottom-30&quot;&gt;&lt;/i&gt;&lt;/h1&gt;
+    &lt;h1 class=&quot;uppercase center-text&quot;&gt;Coming Soon&lt;/h1&gt;
+    &lt;h2 class=&quot;uppercase center-text bottom-30&quot;&gt; We&#39;re working on it&lt;/h2&gt;
+    &lt;p class=&quot;center-text&quot;&gt;We&#39;re working hard to get this page up and running in the shortest possible time.&lt;/p&gt;
+    &lt;div class=&quot;decoration opacity-50&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;countdown&quot;&gt;
+        &lt;div class=&quot;countdown-years&quot;&gt;&lt;div id=&quot;years&quot;&gt;&lt;/div&gt;&lt;em&gt;years&lt;/em&gt;&lt;/div&gt;
+        &lt;div class=&quot;countdown-days&quot;&gt;&lt;div id=&quot;days&quot;&gt;&lt;/div&gt;&lt;em&gt;days&lt;/em&gt;&lt;/div&gt;
+        &lt;div class=&quot;countdown-hours&quot;&gt;&lt;div id=&quot;hours&quot;&gt;&lt;/div&gt;&lt;em&gt;hours&lt;/em&gt;&lt;/div&gt;<span style="white-space:pre"> </span>
+        &lt;div class=&quot;countdown-minutes&quot;&gt;&lt;div id=&quot;minutes&quot;&gt;&lt;/div&gt;&lt;em&gt;minutes&lt;/em&gt;&lt;/div&gt;
+        &lt;div class=&quot;countdown-seconds disabled&quot;&gt;&lt;div id=&quot;seconds&quot;&gt;&lt;/div&gt;&lt;em&gt;seconds&lt;/em&gt;&lt;/div&gt;<span style="white-space:pre"> </span>
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	Line 1 is the page countdown. Just add this to an empty page.</p>
+<p>
+	Line 2 3 4 5 6 will be your content. Simply replace it with your own</p>
+<p>
+	Line 7 to 13 open the countdown timer. You can disable years if you want and enable seconds by moving the&nbsp;<strong>disabled</strong> class from countdown-seconds to countdown-years.&nbsp;&nbsp;</p>
+</section>
+<section id="page_system">
+	<div class="page-header"><h3>Page System</h3><hr class="notop"></div>
+<p>
+	The system page is a page-content-gray box with content-boxed as explained in the features content page. You can create more system events by duplicating the system box&nbsp;</p>
+<p>
+	&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;system-box&quot;&gt;
+    &lt;strong&gt;System FTP&lt;/strong&gt;
+    &lt;em class=&quot;color-green-dark&quot;&gt;
+        Online 
+        &lt;i class=&quot;fa fa-circle&quot;&gt;&lt;/i&gt; 
+     &lt;/em&gt;
+&lt;/div&gt;</pre>
+<p>
+	As you can see, you just copy and paste the code above and apply secondary classes where needed.&nbsp;</p>
+<p>
+	The system events are simple headings with text and secondary classes applied to them.&nbsp;</p>
+</section>
+<section id="task_progress">
+	<div class="page-header"><h3>Task Progress</h3><hr class="notop"></div>
+<p>
+	Task Progress uses a progress bar system made by us. The typical progress bar plugin weighs over 30 kilobytes, and when our entire framework js weighs only 200 we decided it&#39;s absurd that such a small feature to weigh 15% of an entire framework.</p>
+<p>
+	Threfeore, we made this plugin.&nbsp;</p>
+<p>
+	Before we begin. If you notice the&nbsp;<strong>page-task-progress.html</strong> page you&#39;ll see inside that each box shown there is a content-box as explained in the features page that uses different background colors and images with secondary classes. At the bottom of each of these is a progress bar. Let&#39;s explain how to build a progress bar.</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;progress-bar-wrapper&quot;
+     data-progress-complete=&quot;20&quot;
+     data-progress-height=&quot;23&quot; 
+     data-progress-round=&quot;true&quot;
+     data-progress-border=&quot;0&quot; 
+     data-progress-text-visible=&quot;true&quot;
+     data-progress-text-position=&quot;right&quot;
+     data-progress-text-color=&quot;#000000&quot;
+     data-progress-text-size=&quot;11&quot;
+     data-progress-text-before=&quot;&quot;
+     data-progress-text-after=&quot; - Of Setup Complete&quot;
+     data-progress-bar-color=&quot;#3498db&quot;
+     data-progress-bar-background=&quot;rgba(0,0,0,0.2)&quot;&gt;
+     &lt;div class=&quot;progress-bar&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	Line 1 creates the progress bar</p>
+<p>
+	Line 2 is the percentage of completion ( from 0 to 100</p>
+<p>
+	Line 3 is the height of the progress bar</p>
+<p>
+	Line 4 is the border, true is round, false is square</p>
+<p>
+	Line 5 is how thick the progress bar border should be</p>
+<p>
+	Line 6 is true to show text, false to just show the bar</p>
+<p>
+	Line 7 is the location of the text. Can be center, left or right</p>
+<p>
+	Line 8 is the color of the text.</p>
+<p>
+	Line 9 is the font size of the text inside the bar</p>
+<p>
+	Line 10 is the text before the percentage is shown</p>
+<p>
+	Line 11 is the text after the percentage is shown</p>
+<p>
+	Line 12 is the color of the progress bar that expands ( here are some great colors&nbsp;http://color.koya.io/ )&nbsp;</p>
+<p>
+	Line 13 is the color of the background of the progress bar ( here are some great colors&nbsp;http://color.koya.io/ )&nbsp;</p>
+<p>
+	Line 14 is the bar</p>
+<p>
+	Line 15 closes the progress.</p>
+<p>
+	You can create however many progress bars you want. Just as long as you duplicate all the lines above.</p>
+<p>
+	Check out&nbsp;http://color.koya.io/ and&nbsp;http://flatuicolors.com/ for great color combinations.&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="timelines">
+	<div class="page-header"><h3>Timelines</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;timeline-body timeline-body-center&quot;&gt;
+    &lt;div class=&quot;timeline-deco&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;timeline-item&quot;&gt;
+        &lt;i class=&quot;fa fa-google-plus google-bg scale-hover&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;timeline-item-content-full&quot;&gt;
+            &lt;img data-src=&quot;images/pictures/9w.jpg&quot; alt=&quot;img&quot; src=&quot;images/empty.png&quot; class=&quot;preload-image responsive-image&quot;&gt;
+            &lt;h5 class=&quot;thiner center-text&quot;&gt;
+               Our first Photo on Google Plus. We&#39;re adding stuff here too now!
+            &lt;/h5&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;<span style="white-space:pre"> </span>
+
+    &lt;div class=&quot;timeline-item&quot;&gt;
+        &lt;i class=&quot;fa fa-facebook facebook-bg scale-hover&quot;&gt;&lt;/i&gt;
+        &lt;div class=&quot;timeline-item-content&quot;&gt;
+           &lt;h5 class=&quot;thiner center-text&quot;&gt;
+               Just updated our Facebook Page. You can visit it &lt;a href=&quot;#&quot;&gt;on our Page&lt;/a&gt;.
+           &lt;/h5&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;<span style="white-space:pre"> </span>
+&lt;/div&gt;</pre>
+<p>
+	The timeline is comprised of copy and paste blocks. Copy your element and replace the content with what you require.</p>
+<p>
+	To create the second style of timeline is very simple! Just&nbsp;remove&nbsp;<strong>timeline-body-center&nbsp;</strong>from line 15 and you&#39;re good to go! The CSS will take care of the rest.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="page_vcard">
+	<div class="page-header"><h3>Page VCard</h3><hr class="notop"></div>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;page-vcard&quot; class=&quot;content content-boxed content-boxed-padding&quot;&gt;
+    &lt;div class=&quot;vcard-header&quot;&gt;
+        &lt;img data-src=&quot;images/pictures/0s.png&quot; src=&quot;images/empty.png&quot; class=&quot;preload-image&quot;&gt;
+        &lt;h1 class=&quot;bold large-text&quot;&gt;Karla Black&lt;/h1&gt;
+        &lt;em class=&quot;small-text color-gray-dark bottom-10&quot;&gt;Photographer at Enabled&lt;/em&gt;
+        &lt;a href=&quot;scripts/vcard.vcf&quot; target=&quot;_blank&quot; class=&quot;default-link button button-xs button-green button-rounded uppercase ultrabold full-bottom&quot;&gt;Save to contacts&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;h1 class=&quot;vcard-title color-blue-dark&quot;&gt;Phone&lt;/h1&gt;
+    &lt;div class=&quot;vcard-field&quot;&gt;&lt;strong&gt;Mobile&lt;/strong&gt;&lt;a href=&quot;tel:+1 234 567 890&quot;&gt;+1 234 567 890&lt;/a&gt;&lt;i class=&quot;fa fa-phone&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	Line 1 creates the page vcard. This uses the content-boxed design</p>
+<p>
+	Line 2 to 7 crates the vcard header. This houses the image, title an download button for the vcard.</p>
+<p>
+	Line 8 is a vcard title.</p>
+<p>
+	Line 9 is a vcard field</p>
+<p>
+	Line 10 closes the vcard.</p>
+<p>
+	Simply duplicate as you need it.</p>
+<p>
+	If you click the save to contacts button it will download the vcard in the scripts folder to your device. VCards are internationally read by all mobile devices. To customize it, open it with a text editor. If the content there is too complex, simply use an online vcard editor like&nbsp;http://vcardmaker.com/ and download the ready made vcard file and place it in your desired location. When a user will tap the download button he&#39;ll automatically be able to add you to their devices contact list.&nbsp;</p>
+<div>
+	&nbsp;</div>
+</section>
+<section id="covers_important">
+	<div class="page-header"><h3>Covers - Important</h3><hr class="notop"></div>
+<p>
+	Covers, are the elements that build coverpage sliders, center elements on a single screen, or simply create walkthroughs. These are vital to the function of any element and using the power of secondary classes, allow incredibly HUGE amounts of variations.&nbsp;</p>
+<p>
+	Therefore, let&#39;s make a short introduction into <strong>cover-items</strong> the building element of any coverpage, single page pageapp, walkthrough or homepage cover slider and let&#39;s explain how each works.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>FAQ: What pages use the cover item?&nbsp;</strong></p>
+<p>
+	Pages like pageapp-error, pageapp-login, pageapp-login-2, pageapp-soon, pageapp-splash ( all of them ) pageapp-cover and pageapp-walktrhoughs ( all of them ) and also index-cover news-cover, store cover all use the same image slider, with different background images and our imagination when combining the secondary classes for colors.&nbsp;</p>
+<p>
+	<strong>FAQ: What is the role of a cover-item?</strong></p>
+<p>
+	A cover item will measure the size of your screen, width and height, and expand that element to that size. Meaning, it will be full screen. The list above should show you exactly their role and how flexibile they are.</p>
+<p>
+	<strong>FAQ:</strong>&nbsp;<strong>Can I add a tone of content and make the cover item scrollable?</strong></p>
+<p>
+	No. Cover items cannot scroll. Please use limited content. These replicate the design on mobile devices, those do not scroll either.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4 id="covers_important_cover_item_structure">Cover Item Structure</h4>
+<p>
+	Let me show you an example, this will make it much easier for you to understand how it works. Remember the 404 page we discussed a bit back? That has a content inside and nothing else on the page. Great! Well, if you copy that content inside a cover item, that will become centered on the page, and you can add a background behind it!&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;cover-item&quot; style=&quot;background-image:url(images/pictures_vertical/bg1.jpg);&quot;&gt;
+    &lt;div class=&quot;cover-content cover-content-center&quot;&gt;
+
+        &lt;div id=&quot;page-404&quot;&gt;
+             &lt;h1 class=&quot;center-text color-white&quot;&gt;404&lt;/h1&gt;
+             &lt;h4 class=&quot;center-text uppercase ultrabold color-white full-bottom&quot;&gt;Page Not Found&lt;/h4&gt;
+             &lt;p class=&quot;center-text&quot;&gt;
+                 Our server is burning hot trying to find this page, but it couldn&#39;t ... how about going back home?
+             &lt;/p&gt;
+             &lt;a href=&quot;#&quot; class=&quot;back-button button button-red button-s button-center button-rounded uppercase ultrabold&quot;&gt;Go Back&lt;/a&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+    &lt;div class=&quot;cover-overlay overlay overlay-dark&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	&nbsp;</p>
+<p>
+	The structure above will generate a cover item.&nbsp;</p>
+<p>
+	Line 1 is the main wrapping class. This is used by JS to center the page</p>
+<p>
+	Line 2 is the cover content style. Meaning, you can select between cover-content-center ( to center on the page ) cover-content-bottom ( to place the content to the bottom ) and cover-content-center-full ( to center but place text from edge to edge, for this case, place your stuff inside a div class content)&nbsp;</p>
+<p>
+	Inside this, you&#39;ll see the basic 404 page.&nbsp;</p>
+<p>
+	At the very bottom of the page, we setup the cover-overlay class, with the overlay and overlay-dark.&nbsp;</p>
+<p>
+	You can replace overlay-dark with the secondary classes for colors and opacity settings.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	Now, let&#39;s proceed to something like the coverpage slider.&nbsp;</p>
+</section>
+<section id="coverpage_slider">
+	<div class="page-header"><h3>Coverpage Slider</h3><hr class="notop"></div>
+<p>
+	The coverpage slider in essence works just like anyother slider. You&#39;ll have a main class that tells the page it&#39;s a slider, but instead of slider-items you will have cover-items. Each can have it&#39;s own background, and each can have a different style attached to it.&nbsp;</p>
+<p>
+	Let&#39;s take the pageapp-cover-slider.html and explain it line by line. It&#39;s actually very simple to use!&nbsp;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;cover-slider owl-carousel owl-has-dots-over&quot;&gt;
+    
+    &lt;div class=&quot;cover-item&quot; style=&quot;background-image:url(images/pictures_vertical/bg10.jpg);&quot;&gt;
+        &lt;div class=&quot;cover-content cover-content-center&quot;&gt;
+            &lt;h1 class=&quot;color-white center-text uppercase ultrabold full-top fa-3x&quot;&gt;ULTRAMOBILE&lt;/h1&gt;
+            &lt;h4 class=&quot;color-white center-text uppercase ultrabold&quot;&gt;Our Best product yet&lt;/h4&gt;
+            &lt;div class=&quot;deco-thick bg-orange-dark half-top bottom-15&quot;&gt;&lt;/div&gt;
+            &lt;p class=&quot;color-white center-text opacity-70&quot;&gt;Any icon you want from FontAwesome, and any color or size you want as well!&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;button button-blue color-white button-round button-center uppercase ultrabold button-s&quot;&gt;Get started&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cover-overlay overlay bg-black opacity-90&quot;&gt;&lt;/div&gt;
+   &lt;/div&gt;<span style="white-space:pre"> </span>
+
+   &lt;div class=&quot;cover-item&quot; style=&quot;background-image:url(images/pictures_vertical/bg1.jpg);&quot;&gt;
+       &lt;div class=&quot;cover-content cover-content-bottom&quot;&gt;
+           &lt;h2 class=&quot;color-white left-text uppercase ultrabold top-30&quot;&gt;Coverpages rock&lt;/h2&gt;
+           &lt;p class=&quot;color-white left-text opacity-70 bottom-0&quot;&gt;The coverpage slider is made to be flexible, and easy to style, give it a quick swipe left.&lt;/p&gt;
+       &lt;/div&gt;
+       &lt;div class=&quot;cover-overlay overlay overlay-gradient-small&quot;&gt;&lt;/div&gt;
+   &lt;/div&gt;<span style="white-space:pre"> </span>
+
+    &lt;div class=&quot;cover-item&quot; style=&quot;background-image:url(images/pictures_vertical/bg3.jpg);&quot;&gt;
+        &lt;div class=&quot;cover-content cover-content-center cover-content-center-full&quot;&gt;
+            &lt;h4 class=&quot;color-white left-text uppercase ultrabold bottom-15&quot;&gt;FIND YOUR&lt;/h4&gt;
+            &lt;h1 class=&quot;color-white left-text uppercase ultrabold bottom-15 fa-4x&quot;&gt;STYLE&lt;/h1&gt;
+            &lt;h2 class=&quot;color-white left-text uppercase ultrabold bottom-30&quot;&gt;It&#39;s super easy&lt;/h2&gt;
+            &lt;p class=&quot;color-white bottom-0 opacity-50&quot;&gt;It&#39;s easy, play with classes, there are&lt;br&gt; infinite styles for you to find!&lt;/p&gt;
+            &lt;a href=&quot;#&quot; class=&quot;button button-red color-white button-round uppercase ultrabold button-s full-top&quot;&gt;Get started&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;cover-overlay overlay bg-black opacity-30&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</pre>
+<div>
+	&nbsp;</div>
+<p>
+	Let&#39;s take it step by step so everything will be easy to understand.</p>
+<p>
+	Line 1 - Creates the coverpage slider. This can have&nbsp;the following options</p>
+<ul>
+	<li>
+		<strong>owl-has-dots-over</strong> - to place the bottom dots over the slider</li>
+	<li>
+		<strong>owl-no-dots</strong> - to remove the dots completely</li>
+	<li>
+		<strong>owl-has-dots&nbsp;</strong>- to add the dots under the slider</li>
+</ul>
+<p>
+	Line 3 is the housing class for the cover slide. This has the background image attached</p>
+<p>
+	Line 4 is the cover content wrapper. Inside we&#39;ll add our cover elements. This has the class&nbsp;<strong>cover-content-center</strong> so it will create a center aligned cover slide.</p>
+<p>
+	Line 5 to 9 are simple elements from our template with secondary classes attached to them</p>
+<p>
+	Line 10 closes the cover-content-center</p>
+<p>
+	Line 11 is the overlay over the image. This uses secondary classes and opacity</p>
+<p>
+	Line 12 closes the cover item.</p>
+<p>
+	<strong>In order to create a new slide, duplicate lines 3 to 12</strong></p>
+<p>
+	Line 14 is another cover item with the background attached</p>
+<p>
+	Line 15 defines this as being set to the bottom by using&nbsp;<strong>cover-content-bottom</strong></p>
+<p>
+	Line 16 and 17 are the content</p>
+<p>
+	Line 18 closes the cover content</p>
+<p>
+	Line 19 is again an overlay. This uses only a gradient to the bottom not to affect the photo but to allow easy reading for the bottom text. This can be <b>overlay-gradient-small&nbsp;</b>or&nbsp;<strong>overlay-gradient</strong></p>
+<p>
+	<strong>In order to create a new slide, duplicate lines 14 to 20</strong></p>
+<p>
+	Line 22 is the last cover item with the background attached</p>
+<p>
+	Line 23 defines this as being set to the center but as expanding to the full width of the screen</p>
+<p>
+	Lines 24 to 29 are the content</p>
+<p>
+	Notice that in this slide, we alligned all elements to left side of the screen, but it is actually set to the center.</p>
+<p>
+	Line 29 closes the content</p>
+<p>
+	Line 30 is the opacity</p>
+<p>
+	Line 32 closes the entire coverpage slider.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<h4 id="coverpage_slider_coverpage_faq_39s_nbsp">Coverpage FAQ&#39;s&nbsp;</h4>
+<p>
+	<strong>How many images / slides can I use in a cover slider</strong><strong>?</strong></p>
+<p>
+	As many as you want. There is no limit</p>
+<p>
+	<b>Can I not use a background?</b></p>
+<p>
+	Yes! You can see examples of that in the pageapp-walkthroughs.</p>
+<p>
+	<strong>Can I use a video background?</strong></p>
+<p>
+	No, that is a device limited feature.&nbsp; Sliders and videos on mobiles will result into nasty crashes.</p>
+<p>
+	<strong>Can I add arrows to the coverpage slider?</strong></p>
+<p>
+	That wouldn&#39;t be a great idea, but if you want, let us know and we&#39;ll explain how. Your users can only swipe left, right, up or down, and when the entire screen is an image that also has a timeout and dots at the bottom, they will pretty much figure it out as most mobile apps work on the same principle.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="walkthroughs">
+	<div class="page-header"><h3>Walkthroughs</h3><hr class="notop"></div>
+<p>
+	We placed walkthroughs right after the covers and coverpage sliders for a very important reason! They are one and the same thing! The coverpage slider and the walkthrough sldier work exactly on the same principle. The main difference is in the wrapping class. Let&#39;s explain.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Coverpage sliders use this wrapper class as explained in the previous chapter</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;cover-slider owl-carousel owl-has-dots-over&quot;&gt;
+      &lt;!--your cover items go here--&gt;
+&lt;/div&gt;</pre>
+<div>
+	&nbsp;</div>
+<div>
+	Walkthrough sliders however, allow you to add buttons for next and skip and also a main button at the bottom. Other than that you can customize each slide using elements from our template.&nbsp;</div>
+<div>
+	&nbsp;</div>
+<h4 id="walkthroughs_walkthrough_with_main_button_at_the_bottom">Walkthrough with main button at the bottom.</h4>
+<p>
+	The walkthrough with the main button on the bottom is <strong>pageapp-cover-walk-2.html&nbsp;</strong>and it has this structure</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;coverpage coverpage-full walkthrough-buttons walkthrough-has-button&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;next-slide-custom&quot;&gt;Next&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;skip-slide-custom back-button&quot;&gt;Skip&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;get-started-custom back-button button button-full button-blue uppercase ultrabold&quot;&gt;Get Started&lt;/a&gt;
+    &lt;div class=&quot;cover-walkthrough-slider owl-carousel&quot;&gt;
+       &lt;!-- Cover items go here --&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	Line 1 opens the coverpage slider for the walkthrough. It has the secondary classes&nbsp;<strong>walkthrough-buttons&nbsp;</strong>and&nbsp;<strong>walkthrough-has-button</strong>. These classes are necessary for the following step</p>
+<p>
+	Line 2 is the next slide button this will go to the next slide.&nbsp;</p>
+<p>
+	Line 3 is the skip button. For demo purposes we used the &quot;back-button&quot; class to go back where you came from in the demo</p>
+<p>
+	Line 4 is the get started main button at the bottom of the page. This is a fixed button.&nbsp;</p>
+<p>
+	Line 5 defines this as a cover-walkthrough-slider (it has no auto play )</p>
+<p>
+	And inside line 6 you insert you cover slides. We used no backgrounds for ours and simple icons with some text, just like a regular walkthrough would look like.</p>
+<p>
+	Line 7 closes the cover-walkthrough-slider&nbsp;</p>
+<p>
+	Line 8 closes the entire coverpage wrapper.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<div>
+	&nbsp;</div>
+</section>
+<section id="walkthrough_and_coverpages">
+	<div class="page-header"><h3>Walkthrough and Coverpages</h3><hr class="notop"></div>
+<p>
+	Every walkthrough and cover page in our template works on the principles explained in chapter&nbsp;<strong>Covers - Important&nbsp;</strong>and <b>Coverpage Slider&nbsp;</b>and&nbsp;<strong>Walktrhoughs</strong></p>
+<p>
+	Once you read these chapters and check the examples we have in our item, it will be a piece of cake for you to add your own style and taste to our code! It&#39;s absolutely insanely easy to customize!&nbsp;</p>
+</section>
+<section id="final_words">
+	<div class="page-header"><h3>Final Words</h3><hr class="notop"></div>
+<p>
+	If there is anything you don&#39;t find here, or you require clarifications for any element we have here, please open a support ticket on our forums. We will gladly help you out. Our support times are blazing fast and we are patient with any question you may have. No question is small and no question is stupid. If you feel you don&#39;t understand something, please let us know!&nbsp;</p>
+<p>
+	It&#39;s an imense pleasure for us to know our customers know and master our products and can place their imagination in our product to make it their own!&nbsp;</p>
+<p>
+	So, please, if there is anything we may help you with from our product features, or pages, let us know! We&#39;re always available for you on www.enableds.com ( the support page )&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<b>Final note!&nbsp;</b></p>
+<p>
+	We&#39;ve spent hundreds of hours building this item and trying to make the documentation as complete and awesome as possible! Please take a moment and rate our item 5 stars! It really helps us make more customers like yourself happy and give this product some exposure!&nbsp;</p>
+<p>
+	Cheers and thank you for being an awesome buyer!&nbsp;</p>
+<p>
+	The Enabled Team.&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+
+	</div>
+</body>
+</html>

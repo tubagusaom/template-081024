@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--<![endif]-->
+    <!-- BEGIN HEAD -->
+
+    <head>
+        <meta charset="utf-8" />
+        <title>LSP Dana Pensiun - Mobile</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <meta content="Lembaga Sertifikasi Profesi terlisensi oleh BNSP" name="description" />
+        <meta content="" name="author" />
+
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>_assets_mobile/styles/style.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>_assets_mobile/fonts/css/fontawesome-all.min.css">
+        <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>_assets_mobile/styles/framework.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+        <script type="text/javascript">
+            var base_url = '<?= site_url(); ?>';
+        </script>
+        <script src="<?php echo base_url() ?>_assets_mobile/js/jquery.min.js"></script>
+        <link rel="icon" href="<?= base_url(); ?>favicon.ico">
+
+    </head>
+    <!-- END HEAD -->
+
+    <div id="preloader" class="preloader-light">
+        <h1 class="center-text color-black ultrabold uppercase bottom-0 fa-2x">
+            <span class="color-blue-dark"><?= $aplikasi->singkatan_unit ?></span>
+        </h1>
+        <div id="preload-spinner"></div>
+        <em>Copyright LSP DANA PENSIUN 2020. Develop By MBS</em>
+    </div>
+
+    <!-- <div class="page-build highlight-blue"> -->
+    <div id="page-transitions" class="page-build highlight-blue">
+        <!-- <div class="header header-light header-logo-center"> -->
+        <div class="header header-light header-static header-logo-center">
+            <a href="<?=base_url() ?>" class="header-logo"></a>
+            <a data-menu="menu-1" href="#" class="header-icon header-icon-1"><i class="fas fa-bars"></i></a>
+            <a data-menu="menu-profile" href="#" class="header-icon header-icon-4"><i class="fas color-highlight fa-cog fa-spin"></i></a>
+        </div>
+
+        <div id="menu-1" class="menu-sidebar menu-dark menu-sidebar-left menu-sidebar-reveal">
+
+            <div class="menu-scroll">
+                <div class="sidebar-icons">
+                    <a href="#" class="close-menu" style="float:right"><i class="fa-fw fa fa-times"></i></a>
+                </div>
+
+                <div class="container content-padding">
+                    <div class="above-overlay">
+                        <h4 class="uppercase ultrabold top-20 color-white"><?= $this->auth->get_user_data()->nama_user ?></h4>
+                        <p class="bottom-20 color-white opacity-60">
+                            <?= $this->auth->get_user_data()->email ?>
+                        </p>
+                    </div>
+                    <div class="overlay bg-black opacity-90"></div>
+                    <div class="overlay-image preload-image" data-src="images/pictures_vertical/bg10.jpg"></div>
+                </div>
+
+                <div class="menu-items menu-icons bottom-65">
+                    <a href="<?=base_url() ?>home"><i class="fa fa-home"></i>Home</a>
+
+                    <a href="#" data-submenu="submenu-sertifikasi" class="submenu-has-numbers"><i class="fa fa-edit"></i>Sertifikasi</a>
+                    <div class="submenu" id="submenu-sertifikasi">
+                        <a href="<?php echo base_url() ?>st_asesor_kompetensi/index_asesor">Surat Tugas</a>
+                        <a href="<?php echo base_url() ?>pra_asesmen/index_asesor">Pra Asesmen</a>
+
+                        <a href="<?php echo base_url() ?>hasil/index_asesor">Ujian Online</a>
+                        <a href="<?php echo base_url() ?>penilaian_asesor/index_asesor">Rekomendasi Asesor</a>
+
+                        <!--<a href="asesor/honor">Honor Asesmen</a>-->
+                    </div>
+
+                    <a href="#" data-submenu="submenu-dokumen" class="submenu-has-numbers"><i class="fa fa-edit"></i>Dokumen</a>
+                    <div class="submenu" id="submenu-dokumen">
+                        <a href="<?php echo base_url() ?>document_asesor/data">Upload</a>
+
+                        <!--<a href="asesor/honor">Honor Asesmen</a>-->
+                    </div>
+
+                    <a href="<?php echo base_url() ?>bantuan/kontak"><i class="fas fa-envelope"></i>Kontak</a>
+
+
+                </div>
+
+                <p class="sidebar-copyright">Copyright <span class="copyright-year"></span> <?= $aplikasi->singkatan_unit ?>. Develop By MBS</p>
+            </div>
+        </div>
+
+        <div id="menu-profile" class="menu-sidebar menu-dark menu-sidebar-right menu-sidebar-reveal">
+            <div class="menu-scroll">
+                <div class="sidebar-icons">
+                    <a href="#" class="close-menu"><i class="fa-fw fa fa-times"></i></a>
+                </div>
+
+                <div class="menu-items menu-icons bottom-440">
+
+                    <a class="menu-item-active submenu-has-numbers" href="#" data-submenu="submenu-xxx" ><i class="color-blue-light fa fa-user"></i>Akun</a>
+                    <div class="submenu" id="submenu-xxx">
+                        <a id="cpass" href="<?php echo base_url().'users/ubah_password' ?>">Ubah Password</a>
+                    </div>
+
+                    <a class="menu-item-active" href="<?= base_url() . 'users/logout' ?>" ><i class="color-light fas fa-power-off"></i>Logout</a>
+                </div>
+
+                <p class="sidebar-copyright">Copyright <span class="copyright-year"></span> Enabled. All Rights Reserved</p>
+            </div>
+        </div>
+
+        <!-- <div class="page-content header-clear"> -->
+        <div class="page-content header-clear-larger">

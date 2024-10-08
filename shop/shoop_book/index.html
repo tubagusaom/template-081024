@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Mailersend Book Club</title>
+    <meta name="description" content="Welcome to our book club. Take a breather with new collection of stories so ridiculous, you will laugh out loud. Or believe it all. Just ask our colleagues!">
+    <meta property="og:site_name" content="Mailersend Book Club">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="Mailersend Book Club">
+    <meta property="og:description" content="Welcome to our book club. Take a breather with new collection of stories so ridiculous, you will laugh out loud. Or believe it all. Just ask our colleagues!">
+    <meta property="og:image" content="https://www.mailersend.com/img/asset/c29jaWFsX2ltYWdlcy90cmFuc2FjdGlvbmFsLW1lc3NhZ2luZy1zZXJ2aWNlLXRoYXQtZGVsaXZlcnMtb2cucG5n?w=1200&amp;h=630&amp;fit=crop&amp;s=eeb15871b0dcdf75c1dc9fa27170797e">
+
+    <link rel="icon" href="assets/favicon.svg" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="navbar shadow border-b">
+
+        <div class="container flex flex-wrap items-center justify-between">
+            <a href="#">
+                <img class="h-6" src="assets/logo.svg" alt="MailerSend">
+            </a>
+        
+            <ul class="nav-mobile"> <!-- Responsive menu - I decided to NOT do it since I wouldn't built in with pure CSS so that wouldn't be actual representation of what I'd do. My understanding is that I can't use scripts here too. Of course, real mobile menu would be just like on actual mailsend site. -->
+                <li>
+                    <button type="button" class="py-7 pl-4 pr-0 mobile-menu-button">
+                        <svg class="w-5 h-5 " fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M3 4h18v2H3V4zm6 7h12v2H9v-2zm-6 7h18v2H3v-2z"></path></svg>
+                        <svg class="w-5 h-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="display: none;"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95L7.05 5.636z"></path></svg>
+                    </button>
+                </li>
+            </ul>
+        
+            <div class="nav-links-wrapper"> <!-- Nav links -->
+                <ul class="nav-links-list items-center vis-mobile">
+                    <li class="py-9 ml-48">
+                        <a href="#suggestions" class="inline-flex items-center text-black cursor-pointer">
+                            Suggest books
+                        </a>
+                    </li>
+                    <li class="py-9 ml-48">
+                        <a href="#testimonials" class="inline-flex items-center text-black cursor-pointer">
+                            Colleagues’ thoughts
+                        </a>
+                    </li>
+                    <li class="py-9 ml-48">
+                        <a href="#faq" class="inline-flex items-center text-black cursor-pointer">
+                            Common questions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-links-wrapper nav-desktop"> <!-- CTA & Cart -->
+                <ul class="nav-links-list items-center">
+                    <li>
+                        <a href="#collection" class="btn btn-lg">Explore collection</a>
+                    </li>
+                    <li class="py-9 ml-8">
+                        <a class="cursor-pointer">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <mask id="mask0_36_5063" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+                                <rect width="24" height="24" fill="currentColor"/>
+                                </mask>
+                                <g mask="url(#mask0_36_5063)">
+                                <path d="M7.15382 21.5577C6.66794 21.5577 6.25481 21.3875 5.91442 21.0471C5.57404 20.7067 5.40385 20.2936 5.40385 19.8077C5.40385 19.3218 5.57404 18.9087 5.91442 18.5683C6.25481 18.2279 6.66794 18.0577 7.15382 18.0577C7.63972 18.0577 8.05287 18.2279 8.39325 18.5683C8.73363 18.9087 8.90382 19.3218 8.90382 19.8077C8.90382 20.2936 8.73363 20.7067 8.39325 21.0471C8.05287 21.3875 7.63972 21.5577 7.15382 21.5577ZM16.8461 21.5577C16.3602 21.5577 15.9471 21.3875 15.6067 21.0471C15.2663 20.7067 15.0961 20.2936 15.0961 19.8077C15.0961 19.3218 15.2663 18.9087 15.6067 18.5683C15.9471 18.2279 16.3602 18.0577 16.8461 18.0577C17.332 18.0577 17.7451 18.2279 18.0855 18.5683C18.4259 18.9087 18.5961 19.3218 18.5961 19.8077C18.5961 20.2936 18.4259 20.7067 18.0855 21.0471C17.7451 21.3875 17.332 21.5577 16.8461 21.5577ZM6.01535 5.75001L8.54997 11.0577H15.3673C15.425 11.0577 15.4763 11.0433 15.5211 11.0144C15.566 10.9856 15.6045 10.9455 15.6365 10.8942L18.3192 6.01923C18.3577 5.94871 18.3609 5.88621 18.3288 5.83173C18.2968 5.77723 18.2423 5.74998 18.1653 5.74998L6.01535 5.75001ZM5.29613 4.25006H19.1807C19.5897 4.25006 19.899 4.42409 20.1086 4.77216C20.3182 5.12024 20.3281 5.47569 20.1384 5.83851L16.9346 11.6423C16.7705 11.9307 16.5535 12.1554 16.2836 12.3163C16.0137 12.4772 15.7179 12.5577 15.3961 12.5577H8.09998L6.94227 14.6731C6.89099 14.75 6.88939 14.8333 6.93747 14.9231C6.98556 15.0128 7.05767 15.0577 7.15382 15.0577H18.5961V16.5577H7.15382C6.48717 16.5577 5.98622 16.2702 5.65095 15.6952C5.3157 15.1202 5.30384 14.5461 5.61538 13.9731L7.04233 11.4077L3.40385 3.74998H1.5V2.25003H4.34612L5.29613 4.25006Z" fill="black"/>
+                                </g>
+                                </svg>
+        
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+</header>
+
+<main>
+
+    <!-- Hero -->
+    <section class="mt-20">
+
+        <div class="container">
+
+            <div class="flex items-center flex-wrap gap-20 flex-nowrap flex-row">
+
+                <div class="width-1-2">
+
+                    <h1>Books you can’t ignore</h1>
+
+                    <p class="text-xl mt-4 mb-0">Welcome to our book club. Take a breather with new collection of stories so ridiculous, you will laugh out loud. Or believe it all. Just ask our colleagues!</p>
+
+                    <!-- Button bar -->
+                    <div class="button-bar-flex gap-3 mt-6">
+                        
+                        <a href="#collection" class="btn btn-lg">Explore collection</a>
+                        
+                        <a href="#suggestions" class="btn btn-outline btn-lg">Suggest books</a>
+                        
+                    </div>
+
+                </div>
+
+                <div class="width-1-2">
+                    <img src="assets/hero-img.jpg">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Collection -->
+    <section id="collection">
+        <div class="container">
+            <div class="flex flex-col ">
+
+                <h2>Now featuring</h2>
+
+                <!-- Single product row -->
+                <div class="flex flex-row gap-10 mt-10 mobile-flex-col">
+
+                        <!-- Single product -->
+                        <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                            <div class="flex book">
+                                <img src="assets/how-to-defend-yourself-against-alien-abduction.png" class="book-cover">
+                                <div class="flex flex-col justify-between">
+                                    <div class="flex flex-col gap-1">
+                                        <h3 class="font-bold">How to Defend Yourself Against Alien Abduction</h3>
+                                        <p>by Ann Druffel</p>
+                                        <div class="flex flex-row items-center gap-2">
+                                            <div class="flex flex-row">
+                                                <img src="assets/rating-full.svg" class="icon-sm">
+                                                <img src="assets/rating-full.svg" class="icon-sm">
+                                                <img src="assets/rating-full.svg" class="icon-sm">
+                                                <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                                <img src="assets/rating-empty.svg" class="icon-sm">
+                                            </div>
+                                            <a class="text-blue text-xs cursor-pointer underline">Rate this book</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Price & Button bar - Desktop -->
+                                    <div class="flex flex-col gap-2 vis-desktop">
+                                        <p class="font-bold">$6,99</p>
+                                        
+                                        <!-- Button bar -->
+                                        <div class="button-bar-flex gap-3">
+                                            
+                                            <a class="btn cursor-pointer">Add to cart</a>
+                                            
+                                            <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                            
+                                        </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                            <!-- Price & Button bar - Responsive -->
+                            <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                                <p class="font-bold">$6,99</p>
+                                
+                                <!-- Button bar -->
+                                <div class="button-bar-flex flex-row gap-3">
+                                    
+                                    <a href="#" class="btn">Add to cart</a>
+                                    
+                                    <a href="#" class="btn btn-outline">Sneak peak</a>
+                                    
+                                </div>
+
+                                </div>
+
+                                <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                                    <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                        <img src="assets/quote.svg">
+                                        <div class="flex reviews-arrows gap-1">
+                                            <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                            <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                        </div>
+                                    </div>
+        
+                                    <p class=" text-sm">I read it, and I'm glad to say I have never been abducted by aliens so it's clearly one of the most effective tools to prevent abduction available.</p>
+                                    <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                        <img src="assets/review authors/šarūnas.jpeg" class="author_img">
+                                        <div class="flex flex-col">
+                                            <p class="font-semibold text-sm">Šarūnas</p>
+                                            <p class="text-sm">Lead designer</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <!-- Single product -->
+                    <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                        <div class="flex book">
+                            <img src="assets/book covers/toilet-paper-origami.png" class="book-cover">
+                            <div class="flex flex-col justify-between">
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="font-bold">Toilet Paper Origami</h3>
+                                    <p>by Linda Wright</p>
+                                    <div class="flex flex-row items-center gap-2">
+                                        <div class="flex flex-row">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                            <img src="assets/rating-empty.svg" class="icon-sm">
+                                            <img src="assets/rating-empty.svg" class="icon-sm">
+                                        </div>
+                                        <a class="text-blue text-xs cursor-pointer">Rate this book</a>
+                                    </div>
+                                </div>
+
+                                <!-- Price & Button bar - Desktop -->
+                                <div class="flex flex-col gap-2 vis-desktop">
+                                    <div class="flex flex-row flex-wrap flex-nowrap gap-1">
+                                        <p class="font-bold price-sale">$4,49</p>
+                                        <p class="strikethrough opacity-60">$6,99</p>
+                                        <p class="opacity-60">36% off</p>
+                                    </div>
+                                    
+                                    <!-- Button bar -->
+                                    <div class="button-bar-flex gap-3">
+                                        
+                                        <a class="btn cursor-pointer">Add to cart</a>
+                                        
+                                        <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                        
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <!-- Price & Button bar - Responsive -->
+                        <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                            <div class="flex flex-row flex-wrap flex-nowrap gap-1">
+                                <p class="font-bold price-sale">$4,49</p>
+                                <p class="strikethrough opacity-60">$6,99</p>
+                                <p class="opacity-60">36% off</p>
+                            </div>
+                            
+                            <!-- Button bar -->
+                            <div class="button-bar-flex flex-row gap-3">
+                                
+                                <a href="#" class="btn">Add to cart</a>
+                                
+                                <a href="#" class="btn btn-outline">Sneak peak</a>
+                                
+                            </div>
+
+                            </div>
+
+                            <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                                <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                    <img src="assets/quote.svg">
+                                    <div class="flex reviews-arrows gap-1">
+                                        <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                        <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                    </div>
+                                </div>
+    
+                                <p class=" text-sm">It was a gift from my loving sister. Thank you Sis. The instructions are easily understood and have illustrations to make it even easier.</p>
+                                <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                    <img src="assets/review authors/Cesar.jpeg" class="author_img">
+                                    <div class="flex flex-col">
+                                        <p class="font-semibold text-sm">Cesar</p>
+                                        <p class="text-sm">Customer Support</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            
+                        </div>
+
+                <!-- Single product row -->
+                <div class="flex flex-row gap-10 mt-10 mobile-flex-col">
+
+                    <!-- Single product -->
+                    <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                        <div class="flex book">
+                            <img src="assets/book covers/anybody-can-be-cool.png" class="book-cover">
+                            <div class="flex flex-col justify-between">
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="font-bold">Anybody Can Be Cool . . . But Awesome Takes Practice</h3>
+                                    <p>by Lorraine Peterson</p>
+                                    <div class="flex flex-row items-center gap-2">
+                                        <div class="flex flex-row">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                            <img src="assets/rating-empty.svg" class="icon-sm">
+                                        </div>
+                                        <a class="text-blue text-xs cursor-pointer underline">Rate this book</a>
+                                    </div>
+                                </div>
+
+                                <!-- Price & Button bar - Desktop -->
+                                <div class="flex flex-col gap-2 vis-desktop">
+                                    <div class="flex flex-row flex-wrap flex-nowrap gap-1">
+                                        <p class="font-bold price-sale">$6,99</p>
+                                        <p class="strikethrough opacity-60">$6,99</p>
+                                        <p class="opacity-60">36% off</p>
+                                    </div>
+                                    
+                                    <!-- Button bar -->
+                                    <div class="button-bar-flex gap-3">
+                                        
+                                        <a class="btn cursor-pointer">Add to cart</a>
+                                        
+                                        <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                        
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <!-- Price & Button bar - Responsive -->
+                        <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                            <div class="flex flex-row flex-wrap flex-nowrap gap-1">
+                                <p class="font-bold price-sale">$10,99</p>
+                                <p class="strikethrough opacity-60">$18,99</p>
+                                <p class="opacity-60">42% off</p>
+                            </div>
+                            
+                            <!-- Button bar -->
+                            <div class="button-bar-flex flex-row gap-3">
+                                
+                                <a href="#" class="btn">Add to cart</a>
+                                
+                                <a href="#" class="btn btn-outline">Sneak peak</a>
+                                
+                            </div>
+
+                            </div>
+
+                            <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                                <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                    <img src="assets/quote.svg">
+                                    <div class="flex reviews-arrows gap-1">
+                                        <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                        <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                    </div>
+                                </div>
+    
+                                <p class=" text-sm">I am now more awesome! I’ve even shared this book with my friends so they too could become awesome.</p>
+                                <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                    <img src="assets/review authors/Agathe.jpeg" class="author_img">
+                                    <div class="flex flex-col">
+                                        <p class="font-semibold text-sm">Agathe</p>
+                                        <p class="text-sm">Product Manager</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Single product -->
+                    <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                        <div class="flex book">
+                            <img src="assets/book covers/castration.png" class="book-cover">
+                            <div class="flex flex-col justify-between">
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="font-bold">Castration: The Advantages and the Disadvantages</h3>
+                                    <p>by Victor T. Cheney</p>
+                                    <div class="flex flex-row items-center gap-2">
+                                        <div class="flex flex-row">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                            <img src="assets/rating-empty.svg" class="icon-sm">
+                                            <img src="assets/rating-empty.svg" class="icon-sm">
+                                        </div>
+                                        <a class="text-blue text-xs cursor-pointer">Rate this book</a>
+                                    </div>
+                                </div>
+
+                                <!-- Price & Button bar - Desktop -->
+                                <div class="flex flex-col gap-2 vis-desktop">
+                                    <p class="font-bold">$6,99</p>
+                                    
+                                    <!-- Button bar -->
+                                    <div class="button-bar-flex gap-3">
+                                        
+                                        <a class="btn cursor-pointer">Add to cart</a>
+                                        
+                                        <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                        
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <!-- Price & Button bar - Responsive -->
+                        <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                            <p class="font-bold">$6,99</p>
+                            
+                            <!-- Button bar -->
+                            <div class="button-bar-flex flex-row gap-3">
+                                
+                                <a href="#" class="btn">Add to cart</a>
+                                
+                                <a href="#" class="btn btn-outline">Sneak peak</a>
+                                
+                            </div>
+
+                            </div>
+
+                            <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                                <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                    <img src="assets/quote.svg">
+                                    <div class="flex reviews-arrows gap-1">
+                                        <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                        <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                    </div>
+                                </div>
+    
+                                <p class=" text-sm">After reading it, you will be able to make a decision. Myself, I have chosen to be not castrated. Just like before.</p>
+                                <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                    <img src="assets/review authors/João.jpeg" class="author_img">
+                                    <div class="flex flex-col">
+                                        <p class="font-semibold text-sm">João</p>
+                                        <p class="text-sm">Developer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        </div>
+
+                <!-- Single product row -->
+                <div class="flex flex-row gap-10 mt-10 mobile-flex-col">
+
+                    <!-- Single product -->
+                    <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                        <div class="flex book">
+                            <img src="assets/book covers/surgeon.png" class="book-cover">
+                            <div class="flex flex-col justify-between">
+                                <div class="flex flex-col gap-1">
+                                    <h3 class="font-bold">You're Sharp Enough To Be Your Own Surgeon: The Body Contouring Programme</h3>
+                                    <p>by Keith D. Clark</p>
+                                    <div class="flex flex-row items-center gap-2">
+                                        <div class="flex flex-row">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-full.svg" class="icon-sm">
+                                            <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                            <img src="assets/rating-empty.svg" class="icon-sm">
+                                        </div>
+                                        <a class="text-blue text-xs cursor-pointer underline">Rate this book</a>
+                                    </div>
+                                </div>
+
+                                <!-- Price & Button bar - Desktop -->
+                                <div class="flex flex-col gap-2 vis-desktop">
+                                    <p class="font-bold">$3,89</p>
+                                    
+                                    <!-- Button bar -->
+                                    <div class="button-bar-flex gap-3">
+                                        
+                                        <a class="btn cursor-pointer">Add to cart</a>
+                                        
+                                        <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                        
+                                    </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        <!-- Price & Button bar - Responsive -->
+                        <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                            <p class="font-bold">$3,89</p>
+                            
+                            <!-- Button bar -->
+                            <div class="button-bar-flex flex-row gap-3">
+                                
+                                <a href="#" class="btn">Add to cart</a>
+                                
+                                <a href="#" class="btn btn-outline">Sneak peak</a>
+                                
+                            </div>
+
+                            </div>
+
+                            <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                                <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                    <img src="assets/quote.svg">
+                                    <div class="flex reviews-arrows gap-1">
+                                        <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                        <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                    </div>
+                                </div>
+    
+                                <p class=" text-sm">I re-read this book from time to time. Communicating with body is not a stretch for me... I love my body’s wisdom.</p>
+                                <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                    <img src="assets/review authors/Javier.jpeg" class="author_img">
+                                    <div class="flex flex-col">
+                                        <p class="font-semibold text-sm">Javier</p>
+                                        <p class="text-sm">QA Analyst</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Single product -->
+                <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                    <div class="flex book">
+                        <img src="assets/book covers/how-to-shit.png" class="book-cover">
+                        <div class="flex flex-col justify-between">
+                            <div class="flex flex-col gap-1">
+                                <h3 class="font-bold">How to Shit in the Woods: An Environmentally Sound Approach to a Lost Art</h3>
+                                <p>by Kathleen Meyer</p>
+                                <div class="flex flex-row items-center gap-2">
+                                    <div class="flex flex-row">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                        <img src="assets/rating-empty.svg" class="icon-sm">
+                                        <img src="assets/rating-empty.svg" class="icon-sm">
+                                    </div>
+                                    <a class="text-blue text-xs cursor-pointer">Rate this book</a>
+                                </div>
+                            </div>
+
+                            <!-- Price & Button bar - Desktop -->
+                            <div class="flex flex-col gap-2 vis-desktop">
+                                <p class="font-bold">$8,29</p>
+                                
+                                <!-- Button bar -->
+                                <div class="button-bar-flex gap-3">
+                                    
+                                    <a class="btn cursor-pointer">Add to cart</a>
+                                    
+                                    <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                    
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Price & Button bar - Responsive -->
+                    <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                        <p class="font-bold">$8,29</p>
+                        
+                        <!-- Button bar -->
+                        <div class="button-bar-flex flex-row gap-3">
+                            
+                            <a href="#" class="btn">Add to cart</a>
+                            
+                            <a href="#" class="btn btn-outline">Sneak peak</a>
+                            
+                        </div>
+
+                        </div>
+
+                        <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                            <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                <img src="assets/quote.svg">
+                                <div class="flex reviews-arrows gap-1">
+                                    <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                    <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                </div>
+                            </div>
+
+                            <p class=" text-sm">To the uninitiated, the art of having a dump in the woods probably seems no more complicated than "squat, squint, squeeze and squeegee"! Fools.</p>
+                            <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                <img src="assets/review authors/Cesar.jpeg" class="author_img">
+                                <div class="flex flex-col">
+                                    <p class="font-semibold text-sm">Kael</p>
+                                    <p class="text-sm">Customer Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
+
+            <!-- Single product row -->
+            <div class="flex flex-row gap-10 mt-10 mobile-flex-col">
+
+                <!-- Single product -->
+                <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                    <div class="flex book">
+                        <img src="assets/book covers/beginners-guide-to-sex.png" class="book-cover">
+                        <div class="flex flex-col justify-between">
+                            <div class="flex flex-col gap-1">
+                                <h3 class="font-bold">The Beginner's Guide to Sex in the Afterlife</h3>
+                                <p>by David Staume</p>
+                                <div class="flex flex-row items-center gap-2">
+                                    <div class="flex flex-row">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                        <img src="assets/rating-empty.svg" class="icon-sm">
+                                    </div>
+                                    <a class="text-blue text-xs cursor-pointer underline">Rate this book</a>
+                                </div>
+                            </div>
+
+                            <!-- Price & Button bar - Desktop -->
+                            <div class="flex flex-col gap-2 vis-desktop">
+                                <p class="font-bold">$12,89</p>
+                                
+                                <!-- Button bar -->
+                                <div class="button-bar-flex gap-3">
+                                    
+                                    <a class="btn cursor-pointer">Add to cart</a>
+                                    
+                                    <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                    
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Price & Button bar - Responsive -->
+                    <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                        <p class="font-bold">$12,89</p>
+                        
+                        <!-- Button bar -->
+                        <div class="button-bar-flex flex-row gap-3">
+                            
+                            <a href="#" class="btn">Add to cart</a>
+                            
+                            <a href="#" class="btn btn-outline">Sneak peak</a>
+                            
+                        </div>
+
+                        </div>
+
+                        <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                            <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                <img src="assets/quote.svg">
+                                <div class="flex reviews-arrows gap-1">
+                                    <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                    <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                </div>
+                            </div>
+
+                            <p class=" text-sm">I'm so confused. I just read a book on sex on the afterlife and I am no more convinced of an afterlife, much less sex in it, than I was before ...</p>
+                            <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                <img src="assets/review authors/Agathe.jpeg" class="author_img">
+                                <div class="flex flex-col">
+                                    <p class="font-semibold text-sm">Tautvydas</p>
+                                    <p class="text-sm">Lead Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- Single product -->
+                <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                    <div class="flex book">
+                        <img src="assets/book covers/how-to-start-your-own-country.png" class="book-cover">
+                        <div class="flex flex-col justify-between">
+                            <div class="flex flex-col gap-1">
+                                <h3 class="font-bold">How to Start Your Own Country</h3>
+                                <p>by Erwin S. Strauss</p>
+                                <div class="flex flex-row items-center gap-2">
+                                    <div class="flex flex-row">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                        <img src="assets/rating-empty.svg" class="icon-sm">
+                                        <img src="assets/rating-empty.svg" class="icon-sm">
+                                    </div>
+                                    <a class="text-blue text-xs cursor-pointer">Rate this book</a>
+                                </div>
+                            </div>
+
+                            <!-- Price & Button bar - Desktop -->
+                            <div class="flex flex-col gap-2 vis-desktop">
+                                <div class="flex flex-row flex-wrap flex-nowrap gap-1">
+                                    <p class="font-bold price-sale">$2,99</p>
+                                    <p class="strikethrough opacity-60">$6,99</p>
+                                    <p class="opacity-60">57% off</p>
+                                </div>
+                                
+                                <!-- Button bar -->
+                                <div class="button-bar-flex gap-3">
+                                    
+                                    <a class="btn cursor-pointer">Add to cart</a>
+                                    
+                                    <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                    
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Price & Button bar - Responsive -->
+                    <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                        <div class="flex flex-row flex-wrap flex-nowrap gap-1">
+                            <p class="font-bold price-sale">$2,99</p>
+                            <p class="strikethrough opacity-60">$6,99</p>
+                            <p class="opacity-60">57% off</p>
+                        </div>
+                        
+                        <!-- Button bar -->
+                        <div class="button-bar-flex flex-row gap-3">
+                            
+                            <a href="#" class="btn">Add to cart</a>
+                            
+                            <a href="#" class="btn btn-outline">Sneak peak</a>
+                            
+                        </div>
+
+                        </div>
+
+                        <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                            <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                <img src="assets/quote.svg">
+                                <div class="flex reviews-arrows gap-1">
+                                    <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                    <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                </div>
+                            </div>
+
+                            <p class=" text-sm">As a kid I always wondered why people don't just start their own countries if they don't like the one they're in. Now I know.</p>
+                            <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                <img src="assets/review authors/Peter.jpeg" class="author_img">
+                                <div class="flex flex-col">
+                                    <p class="font-semibold text-sm">Peter</p>
+                                    <p class="text-sm">Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+
+            <!-- Single product row -->
+            <div class="flex flex-row gap-10 mt-10 mobile-flex-col">
+
+                <!-- Single product -->
+                <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                    <div class="flex book">
+                        <img src="assets/book covers/street-sword.png" class="book-cover">
+                        <div class="flex flex-col justify-between">
+                            <div class="flex flex-col gap-1">
+                                <h3 class="font-bold">Street Sword: Practical Use of the Long Blade for Self-Defense</h3>
+                                <p>by Phil Elmore</p>
+                                <div class="flex flex-row items-center gap-2">
+                                    <div class="flex flex-row">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                        <img src="assets/rating-empty.svg" class="icon-sm">
+                                    </div>
+                                    <a class="text-blue text-xs cursor-pointer underline">Rate this book</a>
+                                </div>
+                            </div>
+
+                            <!-- Price & Button bar - Desktop -->
+                            <div class="flex flex-col gap-2 vis-desktop">
+                                <p class="font-bold">$8,89</p>
+                                
+                                <!-- Button bar -->
+                                <div class="button-bar-flex gap-3">
+                                    
+                                    <a class="btn cursor-pointer">Add to cart</a>
+                                    
+                                    <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                    
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Price & Button bar - Responsive -->
+                    <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                        <p class="font-bold">$8,89</p>
+                        
+                        <!-- Button bar -->
+                        <div class="button-bar-flex flex-row gap-3">
+                            
+                            <a href="#" class="btn">Add to cart</a>
+                            
+                            <a href="#" class="btn btn-outline">Sneak peak</a>
+                            
+                        </div>
+
+                        </div>
+
+                        <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                            <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                <img src="assets/quote.svg">
+                                <div class="flex reviews-arrows gap-1">
+                                    <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                    <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                </div>
+                            </div>
+
+                            <p class=" text-sm">Thank you, sensei, now I know how to wield a gun in one hand and a katana in the other. I'll be sure to save someone for the rest of you.</p>
+                            <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                <img src="assets/review authors/Glenn.png" class="author_img">
+                                <div class="flex flex-col">
+                                    <p class="font-semibold text-sm">Glenn</p>
+                                    <p class="text-sm">Customer Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <!-- Single product -->
+                <div class="flex flex-wrap flex-nowrap flex-col product-card">
+
+                    <div class="flex book">
+                        <img src="assets/book covers/our-haunted-planet.png" class="book-cover">
+                        <div class="flex flex-col justify-between">
+                            <div class="flex flex-col gap-1">
+                                <h3 class="font-bold">Our Haunted Planet</h3>
+                                <p>by John A. Keel</p>
+                                <div class="flex flex-row items-center gap-2">
+                                    <div class="flex flex-row">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-full.svg" class="icon-sm">
+                                        <img src="assets/rating-half-empty.svg" class="icon-sm">
+                                        <img src="assets/rating-empty.svg" class="icon-sm">
+                                        <img src="assets/rating-empty.svg" class="icon-sm">
+                                    </div>
+                                    <a class="text-blue text-xs cursor-pointer">Rate this book</a>
+                                </div>
+                            </div>
+
+                            <!-- Price & Button bar - Desktop -->
+                            <div class="flex flex-col gap-2 vis-desktop">
+                                <p class="font-bold">$6,99</p>
+                                
+                                <!-- Button bar -->
+                                <div class="button-bar-flex gap-3">
+                                    
+                                    <a class="btn cursor-pointer">Add to cart</a>
+                                    
+                                    <a class="btn btn-outline  cursor-pointer">Sneak peak</a>
+                                    
+                                </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    
+                    <!-- Price & Button bar - Responsive -->
+                    <div class="flex flex-col gap-2 vis-mobile fill-width mt-1">
+                        <p class="font-bold">$6,99</p>
+                        
+                        <!-- Button bar -->
+                        <div class="button-bar-flex flex-row gap-3">
+                            
+                            <a href="#" class="btn">Add to cart</a>
+                            
+                            <a href="#" class="btn btn-outline">Sneak peak</a>
+                            
+                        </div>
+
+                        </div>
+
+                        <div class="flex flex-wrap flex-nowrap flex-col reviews">
+                            <div class="flex flex-wrap flex-nowrap flex-row justify-between review-icons">
+                                <img src="assets/quote.svg">
+                                <div class="flex reviews-arrows gap-1">
+                                    <img src="assets/arrow-left.svg" class="cursor-pointer">
+                                    <img src="assets/arrow-right.svg" class="cursor-pointer">
+                                </div>
+                            </div>
+
+                            <p class=" text-sm">This book really makes your mind spin as he pretty much covers centuries of mysteries. I am not sure I believe his theories though.</p>
+                            <div class="flex items-center gap-3 flex-wrap flex-nowrap flex-row review-author">
+                                <img src="assets/review authors/Abdullah.jpeg" class="author_img">
+                                <div class="flex flex-col">
+                                    <p class="font-semibold text-sm">Abdullah</p>
+                                    <p class="text-sm">Customer Support Lead</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+
+        </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Suggest more books -->
+    <section id="suggestions">
+        <div class="container">
+
+            <div class="flex items-center flex-wrap gap-20 flex-nowrap flex-row">
+                <div class="width-1-2">
+                    <h2>Suggest more books</h2>
+                    <p class="text-xl mt-4 mb-0">Didn’t find the book that’s interesting to you? Tell us what you’re into and we will find stories just for you.</p>
+
+                    <form id="suggest-form" class="flex flex-col mt-10 gap-5"><input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                        <input type="hidden" name="terabytee-test" value="mlsn.6838261ba35314c71d33b35077a83b2fd9ce2a39a44ed3bbf1c4d7242bffd32c">
+                            <div>
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" name="email" id="email" value="" autocomplete="on" required="required" class="input fill-width">
+                            </div>
+                            <div>
+                                <label for="text" class="form-label">Genre of the book</label>
+                                <input type="text" name="book-genre" id="book-genre" autocomplete="on" required="required"  class="input fill-width">
+                            </div>
+                        <button type="submit" class="flex btn w-full mt-1 mx-auto">
+                            <span class="mx-auto">Send suggestion</span></button></form>
+
+                </div>
+
+                <img src="assets/suggest-image.png" class="width-1-2">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container">
+
+            <div class="flex items-start flex-wrap gap-20 flex-nowrap flex-row">
+
+                <div class="width-1-2">
+                    <div class="mb-12">
+                        <h2>What our colleagues are thinking</h2>    
+                        <p class="text-xl mt-4 mb-0">Curious? Let the experiences of our readers illuminate why these books are not just a purchase, but an investment in a world less ordinary.</p>
+                    </div>
+
+                </div>
+                <div class="width-1-2">
+                    <div class="flex flex-wrap flex-nowrap flex-row justify-between h-4 review-icons">
+                        <img src="assets/quote.svg" class="fill-current w-8 h-8">
+                        <div class="flex reviews-arrows gap-1">
+                            <img src="assets/arrow-left.svg" class="cursor-pointer fill-current w-6 h-6">
+                            <img src="assets/arrow-right.svg" class="cursor-pointer fill-current w-6 h-6">
+                        </div>
+                    </div>
+
+                    <div>
+
+                        
+                    <p class="text-xl">Ah yes, because what I really needed in my life was another rabbit hole to fall into. Well, congrats, you got me. These books are so out there, they're practically in orbit. Can't wait for my next 'educational' read.</p>
+                    
+                    <div class="flex items-center mt-8">
+                        <div class="flex items-center gap-3 review-author">
+                            <img src="assets/review authors/šarūnas.jpeg" class="h-16 w-16 rounded-lg">
+                            <div class="flex flex-col">
+                                <p class="font-semibold text-lg">Šarūnas</p>
+                                <p class="text-lg">Lead designer</p>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Common questions -->
+    <section id="faq">
+
+        <div class="container">
+
+            <div class="common-questions">
+                <h2 class="mb-12">Common questions</h2>
+
+                <div class="grid grid-cols-2 gap-20">
+
+                    <div>
+                        <!-- Single question -->
+                        <div>
+                            <div class="border-b-2">
+                                <div class="-mx-6 transition-all ease-in-out bg-secondary rounded-md">
+                                    <a class="flex flex-1 flex-grow-0 gap-4 items-center justify-between px-6 py-5 qtitle">
+                                        <h4 class="text-lg font-semibold mb-0">What kinds of topics do your books cover?</h4>
+                                        <svg class="w-6 h-6 transition-all transform flex-none rotate-hover" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single question -->
+                        <div>
+                            <div class="border-b-2">
+                                <div class="-mx-6 transition-all ease-in-out bg-secondary rounded-md">
+                                    <a class="flex flex-1 flex-grow-0 gap-4 items-center justify-between px-6 py-5 qtitle">
+                                        <h4 class="text-lg font-semibold mb-0">How often do you get new titles?</h4>
+                                        <svg class="w-6 h-6 transition-all transform flex-none rotate-hover" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Single question -->
+                        <div>
+                            <div class="border-b-2">
+                                <div class="-mx-6 transition-all ease-in-out bg-secondary rounded-md">
+                                    <a class="flex flex-1 flex-grow-0 gap-4 items-center justify-between px-6 py-5 qtitle">
+                                        <h4 class="text-lg font-semibold mb-0">How do I know these books are for me?</h4>
+                                        <svg class="w-6 h-6 transition-all transform flex-none rotate-hover" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+    
+                    <div>
+                        <!-- Single question -->
+                        <div>
+                            <div class="border-b-2">
+                                <div class="-mx-6 transition-all ease-in-out bg-secondary rounded-md">
+                                    <a class="flex flex-1 flex-grow-0 gap-4 items-center justify-between px-6 py-5 qtitle">
+                                        <h4 class="text-lg font-semibold mb-0">Do you offer any bundles or discounts?</h4>
+                                        <svg class="w-6 h-6 transition-all transform flex-none rotate-hover" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single question -->
+                        <div>
+                            <div class="border-b-2">
+                                <div class="-mx-6 transition-all ease-in-out bg-secondary rounded-md">
+                                    <a class="flex flex-1 flex-grow-0 gap-4 items-center justify-between px-6 py-5 qtitle">
+                                        <h4 class="text-lg font-semibold mb-0">Is there a return or exchange policy?</h4>
+                                        <svg class="w-6 h-6 transition-all transform flex-none rotate-hover" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path d="M12 13.172l4.95-4.95 1.414 1.414L12 16 5.636 9.636 7.05 8.222z"></path></svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    
+    
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100-50 bg-opacity-50 pt-20 pb-24" id="footer">
+        <div class="container">
+            <div class="mt-12 flex flex-col flex-wrap items-start">
+                <div class="flex flex-col">
+                    <div class="block leading-6 mb-2">
+                        © 2020 - 2023 MailerSend.
+                    </div>
+                    <div class="underline text-sm leading-6">
+                        <a class="cursor-pointer">Terms of Service</a>
+                        <a class="cursor-pointer ml-8">Privacy Policy</a>
+                        <a class="cursor-pointer ml-8">Report abuse</a>
+                        <a class="cursor-pointer ml-8">Cookies Settings</a>
+                    </div>
+                </div>
+                <div class="flex gap-10 flex-wrap flex-row mt-4">
+                    <div class="flex gap-4 flex-row items-center opacity-75 payments-imgs">
+                        <img src="assets/footer-secure-payments-1.png" width="197" class="mt-2 mt-sm-0">
+                        <img src="assets/footer-secure-payments-2.png" width="209" class="mt-2 mt-sm-0 d-block d-sm-inline-block">
+                    </div>
+                    <div class="flex flex-col flex-wrap">
+                        <a class="flex items-center text-gray-500 cursor-pointer">
+                            <svg class="fill-current w-10 h-10 text-gray-500 group-hover:text-black-100" height="39" viewBox="0 0 39 39" width="39" xmlns="http://www.w3.org/2000/svg"><path d="m19.5 0 .632 2.045h2.045l-1.656 1.263.632 2.045-1.653-1.264-1.655 1.264.632-2.045-1.655-1.263h2.045z"></path><path d="m19.5 33.647.632 2.045h2.045l-1.654 1.264.63 2.044-1.653-1.263-1.655 1.263.632-2.044-1.655-1.264h2.045z"></path><path d="m27.911 3.059.631 2.041h2.045l-1.654 1.267.632 2.044-1.654-1.264-1.654 1.265.632-2.044-1.655-1.268h2.045z"></path><path d="m34.794 8.857.632 2.044h2.044l-1.654 1.264.632 2.044-1.654-1.263-1.654 1.264.632-2.044-1.655-1.266h2.044z"></path><path d="m34.794 25.235.631 2.045h2.045l-1.654 1.264.632 2.044-1.654-1.263-1.654 1.263.632-2.044-1.654-1.264h2.045z"></path><path d="m4.206 8.857.631 2.043h2.045l-1.654 1.266.632 2.044-1.654-1.263-1.654 1.263.632-2.044-1.655-1.266h2.045z"></path><path d="m36.324 16.824.631 2.045h2.045l-1.654 1.264.632 2.045-1.654-1.263-1.654 1.262.632-2.045-1.655-1.264h2.044z"></path><path d="m2.677 16.824.632 2.045h2.044l-1.653 1.263.632 2.045-1.655-1.263-1.655 1.263.632-2.045-1.654-1.263h2.045z"></path><path d="m4.206 25.235.631 2.045h2.045l-1.654 1.264.631 2.044-1.653-1.263-1.654 1.263.632-2.044-1.655-1.263h2.045z"></path><path d="m29.44 32.117.631 2.044h2.045l-1.655 1.264.632 2.044-1.653-1.262-1.654 1.263.632-2.044-1.654-1.264h2.045z"></path><path d="m11.088 3.059.631 2.041h2.045l-1.654 1.267.632 2.044-1.654-1.264-1.654 1.265.632-2.044-1.655-1.268h2.045z"></path><path d="m9.559 32.117.632 2.045h2.045l-1.654 1.263.632 2.045-1.655-1.263-1.654 1.263.632-2.045-1.654-1.262h2.044z"></path><path d="m22.875 18.385h.533a1.085 1.085 0 0 1 1.066 1.1v4.415a1.085 1.085 0 0 1 -1.065 1.1h-7.819a1.085 1.085 0 0 1 -1.066-1.1v-4.41a1.085 1.085 0 0 1 1.066-1.1h.533v-1.659a3.378 3.378 0 1 1 6.753 0zm-4.975-1.655v1.654h3.2v-1.654a1.6 1.6 0 1 0 -3.2 0z" fill-rule="evenodd"></path></svg>
+                            <div class="flex flex-col whitespace-nowrap  ml-5">
+                                <span class="text-base font-bold group-hover:text-black-100">
+                                  GDPR Compliant
+                                </span>
+                                <span class="text-sm group-hover:text-black-100">
+                                    Your data is safe with us
+                                </span>
+                            </div>
+                        </a>
+    
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Video music player */
+#video1 {
+  display: none;
+}
+
+.bukaUndangan {
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+  text-transform: uppercase;
+}
+
+.navbar-brand {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-shadow: 1px 1px #000;
+}
+
+/* #countDownNikah {
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 1px #000;
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: 400;
+  color: red;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+} */
+
+#countDownNikah {
+  font-family: "Roboto", sans-serif;
+
+  margin-top: -11rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: 000;
+}
+
+.countdown {
+  font-family: "Roboto", sans-serif;
+
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.day,
+.hour,
+.minute,
+.second {
+  font-family: "Roboto", sans-serif;
+
+  font-size: 1.5rem;
+}
+
+.days {
+  font-size: 1rem;
+  color: #000;
+}
+
+.jumbotron {
+  padding-top: 1rem;
+  background: url(../img/background2.jpg) no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  min-height: 700px;
+  overflow: hidden;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  padding: 5em inherit;
+  font-family: "Great Vibes", cursive;
+}
+
+#volume {
+  position: fixed;
+  /* Set the navbar to fixed position */
+  bottom: 5.5rem;
+  /* Position the navbar at the top of the page */
+  right: 1rem;
+  /* border: 1px solid #7f8c8d; */
+  display: none;
+  cursor: pointer;
+  /* width: 100%; Full width */
+}
+
+#home {
+  border: 1px solid black;
+  background-color: lightblue;
+  overflow: hidden;
+}
+
+.the-wedding-of {
+  letter-spacing: 10px;
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 1px #000;
+}
+
+.the-wedding-of-tgl {
+  font-family: "Roboto", sans-serif;
+  text-shadow: 1px 1px #000;
+  letter-spacing: 5px;
+}
+
+.tron-text {
+  width: 50%;
+}
+
+.font-display {
+  padding-top: 2em;
+}
+
+section {
+  padding-top: 11.5rem;
+}
+
+#full-bg {
+  background: url(../img/background1.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 900px;
+  overflow: hidden;
+}
+
+#pembukaan {
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  font-weight: 700;
+}
+
+.protokoll {
+  color: #000;
+  text-transform: capitalize;
+  padding-bottom: 6rem;
+  padding-top: 2rem;
+}
+
+#surat {
+  /* background-size: cover;
+  min-height: 900px;
+  overflow: hidden; */
+  color: #000;
+  padding: 5em inherit;
+  font-weight: 700;
+}
+
+.isi-surat {
+  word-spacing: 10px;
+}
+
+#wedding {
+  padding-top: 11.5rem;
+}
+
+#resepsi {
+  /* background: url(img/3.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 900px;
+  overflow: hidden; */
+  color: #000;
+  padding-top: 11.5rem;
+  /* text-shadow: 1px 1px #000; */
+}
+
+.nama-mempelai {
+  font-family: "Great Vibes", cursive;
+  color: #fbc531;
+  text-shadow: 1px 1px #000;
+}
+
+#gallery {
+  padding-top: 11.5rem;
+  font-family: "Great Vibes", cursive;
+}
+
+.akad {
+  font-family: "Great Vibes", cursive;
+}
+
+#lokasi {
+  padding-top: 11.5rem;
+}
+
+#trailer {
+  display: none;
+}
+
+.locations {
+  font-family: "Great Vibes", cursive;
+}

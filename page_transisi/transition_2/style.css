@@ -1,0 +1,54 @@
+body {
+  margin: 1em;
+}
+
+a {
+  text-decoration: none;
+  background: #eee;
+  padding: .5em;
+  margin-bottom: 1em;
+  display: inline-block;
+}
+
+.box {
+  display: block;  
+  background: lightblue;
+  margin-bottom: 1em;
+}
+
+#fade-in {
+  height: 150px;
+  width: 1px;
+  opacity: 0;
+  transition: all .75s ease;
+}
+
+#fade-in.show {
+  opacity: 1;
+  height: 150px;
+  width: 500px;
+}
+
+#spin-in {
+  opacity: .2;
+  height: 50px;
+  width: 50px;
+  transform: translateX(0) rotate(0deg);  
+  transition: all .75s ease;
+}
+
+#spin-in.show2 {
+  transform: translateX(450px) rotate(720deg);  
+  opacity: 1;
+}
+
+h1.spacing {
+  letter-spacing: 0;
+  opacity: .5;
+  transition: all .75s ease-out;
+}
+
+h1.spacing.spaced {
+  opacity: 1;
+  letter-spacing: 10px;
+}
